@@ -1,0 +1,69 @@
+*{
+    max-width: 860px;
+    margin: auto;
+    
+}
+
+#wrapper {
+    background-color: rgb(178, 164, 164);
+    width: 760px;
+    padding: 10px;
+}
+#header {
+    display: flex;
+    background-color: red;
+}
+#topic-2 {
+    text-align: center;
+    background-color: rgb(255, 0, 0);
+    width: 20%;
+}
+#topic-2 button{
+   font-size: 20px;
+}
+#add-form {
+    background-color: red;
+    padding: 20px;
+    width: 720px;
+}
+#name-product {
+    background-color: rgb(177, 29, 29);
+    width: 80%;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+#add-player{
+    padding: 10px;
+    border-radius: 10px;
+    width: 15%;
+}
+#content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+    position: relative;
+}
+#left-content{
+    display: flex;
+    position: absolute;
+    left: 50px;
+    bottom: 10px;
+    font-size: 20px;
+}
+#right-content {
+    display: flex;
+    position: absolute;
+    right: 100px;
+    bottom: 10px;
+}
+#icon {
+    position: absolute;
+    right: 40px;
+}
+#icon-1{
+    position: absolute;
+    left: 10px;
+}
+
