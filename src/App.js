@@ -1,24 +1,36 @@
 import logo from './logo.svg';
 import './App.css';
-
+import AutoLayoutSizingExample from './Component/Control';
+import ListPlayers from './Component/ListPlayers';
+import Form from './Component/Form';
+import { useState } from 'react';
 function App() {
+  const [state, setState] = useState([]);
+  const addPlayer = (playerName) => {
+    const newPlayer = { name: playerName ,count:0};
+    setState([...state, newPlayer]);
+  };
+  const deleteNote = (index) => {
+    setState((prevState) => prevState.filter((_, i) => i !== index));
+  };
+
+  if (state.length === 0) {
+   alert('Không còn người chơi')
+  }
+
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  <div >
+    <div>
+      <AutoLayoutSizingExample state = {state}/>
     </div>
+    <div >
+      < ListPlayers state = {state} setState={setState} deleteNote={deleteNote} />
+    </div>
+    <div>
+      <Form addPlayer={addPlayer} />
+    </div>
+  </div>
   );
 }
 

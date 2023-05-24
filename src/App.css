@@ -36,3 +36,48 @@
     transform: rotate(360deg);
   }
 }
+.header {
+  background-color: #0EB9B9;
+  color: white;
+}
+.first {
+  display: flex;
+  gap: 20px;
+}
+.Number {
+  display: flex;
+  gap: 20px;
+}
+.formSubmit {
+  display: flex;
+  background-color: #0EB9B9;
+  height: 60px;
+  align-items: center;
+  position: relative;
+}
+.btn-sm {
+  margin-left: 1050px;
+  font-size: 20px;
+  position: absolute;
+  bottom: 15px;
+}
+.btn-sm button {
+  border: none;
+  border-radius: 5px;
+}
+.ip-add {
+  font-size: 25px;
+  margin-left: 200px;
+  border: none;
+  color: white;
+ 
+}
+.ip-add input {
+  border: none;
+  border-radius: 10px;
+  background-color: #0DA6A8;
+}
+.d-flex button{
+  border: none;
+  background-color: white;
+}
